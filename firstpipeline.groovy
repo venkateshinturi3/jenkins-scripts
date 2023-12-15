@@ -15,18 +15,20 @@ pipeline {
                 }
             }
         }
-        stage ('packaging')
+        stage ('packaging'){
             steps {
                 script{
                 sh 'echo"packaging"'
                 }
-                }
-        stage ('Running test cases')
+            }
+        }
+        stage ('Running test cases'){
             steps {
                 script{
                 sh 'echo "Test case excution is in progress"'
                 }
             }
+        }
         stage ('Deployment')
             steps {
                 script{
