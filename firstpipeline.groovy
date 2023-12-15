@@ -18,7 +18,7 @@ pipeline {
         stage ('packaging'){
             steps {
                 script{
-                sh 'echo"packaging"'
+                sh 'echo "packaging"'
                 }
             }
         }
