@@ -29,11 +29,12 @@ pipeline {
                 }
             }
         }
-        stage ('Deployment')
+        stage ('Deployment'){
             steps {
                 script{
                 sh 'echo "deployment is completed"'
                 }
             }
+        }
     }
 }
