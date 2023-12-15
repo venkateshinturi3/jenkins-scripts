@@ -1,25 +1,25 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage ('Build') {
             steps {
                 sh 'echo "Hello World"'
             }
         }
-        stage('compiling') {
+        stage ('compiling') {
             steps {
                 sh 'echo "compiling"'
             }
         }
-        stage('packaging')
+        stage ('packaging')
             steps {
                 sh 'echo"packaging"'
                 }
-        stage('Running test cases')
+        stage ('Running test cases')
             steps {
                 sh 'echo "Test case excution is in progress"'
             }
-        stage('Deployment')
+        stage ('Deployment')
             steps {
                 sh 'echo "deployment is completed"'
             }
